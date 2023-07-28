@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marksheet</title>
+
+    <style>
+        body {
+            background-color: #e3e2de;
+        }
+
+        label {
+            width: 180px;
+            clear: left;
+            text-align: right;
+            padding-right: 10px;
+            font-weight: bold;
+            font-family: "Audiowide", sans-serif;
+        }
+
+        input {
+            border: 2px groove #000000;
+            text-align: center;
+            font-weight: 700;
+            border-radius: 5px;
+        }
+
+        input,
+        label {
+            float: left;
+            margin-bottom: 20px;
+            width: 180px;
+        }
+
+        legend {
+            font-weight: bold;
+            color: red;
+        }
+
+        legend,
+        label {
+            font-size: x-large;
+        }
+
+        fieldset {
+            height: 350px;
+            border: 3px groove #000000;
+            border-radius: 7px;
+        }
+
+        div {
+            padding: 25px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class='main'>
+        <form>
+            <fieldset>
+                <legend>Marksheet</legend>
+                <div>
+                    <label for="maths">Maths : </label>
+                    <input type="number" name="maths" required min="1" max="100">
+                    <br>
+                    <label for="science">Science : </label>
+                    <input type="number" name="science" required min="1" max="100">
+                    <br>
+                    <label for="sst">Social Studies : </label>
+                    <input type="number" name="sst" required min="1" max="100">
+                    <br>
+                    <label for="english">English : </label>
+                    <input type="number" name="english" required min="1" max="100">
+                    <br>
+                    <label for="hindi">Hindi : </label>
+                    <input type="number" name="hindi" required min="1" max="100">
+                    <br>
+                    <input type="submit" value="Submit" formmethod="post"
+                        style="position: absolute; left: 315px; top:325px; width:70px; font-weight: bold; padding : 5px; cursor:pointer;">
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
+</body>
+
+</html>
